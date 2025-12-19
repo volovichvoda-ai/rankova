@@ -5,12 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Кавʼярня «Ранкова»</title>
 
-<style> {
+<style>
+/* RESET */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, sans-serif;
-} 
+}
+
+/* BASE */
 body {
   background-color: #faf7f2;
   color: #3e2f24;
@@ -18,10 +22,10 @@ body {
   line-height: 1.6;
 }
 
-/* HERO /
+/* HERO */
 .hero {
   min-height: 100vh;
-  background: linear-gradient(135deg, #1f4d3a, #5b3a29);
+  background: linear-gradient(135deg,#1f4d3a,#5b3a29);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -50,7 +54,7 @@ body {
   font-weight: bold;
 }
 
-/ SECTIONS /
+/* SECTIONS */
 section {
   padding: 80px 20px;
 }
@@ -65,7 +69,7 @@ section p {
   margin: 0 auto;
 }
 
-/ MENU /
+/* MENU */
 .menu-block {
   margin: 20px 0;
 }
@@ -78,7 +82,7 @@ section p {
   margin: 6px 0;
 }
 
-/ GALLERY /
+/* GALLERY */
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
@@ -93,19 +97,19 @@ section p {
   border-radius: 12px;
 }
 
-/ CONTACTS /
+/* CONTACTS */
 .contacts {
   background-color: #f1e6d8;
 }
 
-/ FOOTER /
+/* FOOTER */
 footer {
   background-color: #3e2f24;
   color: #ffffff;
   padding: 15px;
 }
 
-/ MOBILE */
+/* MOBILE */
 @media (max-width: 600px) {
   .hero h1 {
     font-size: 32px;
