@@ -1,34 +1,37 @@
 <!DOCTYPE html>
-<index.html>
 <html lang="uk">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Кавʼярня «Ранкова»</title>
+
 <style>
-*{
+/* RESET */
+{
     margin:0;
     padding:0;
     box-sizing:border-box;
     font-family: "Segoe UI", Arial, sans-serif;
 }
 
+/ BASE /
 body{
     background:#faf7f2;
     color:#3e2f24;
     line-height:1.6;
-    text-align: center; /* горизонтальне центрування для ВСЬОГО тексту */
+    text-align:center;
 }
 
-/* HERO */
+/ HERO /
 .hero{
     min-height:100vh;
     display:flex;
+    flex-direction:column;
     justify-content:center;
     align-items:center;
     background:linear-gradient(135deg,#1f4d3a,#5b3a29);
-    flex-direction: column;
     color:#fff;
+    padding:40px 20px;
 }
 
 .hero h1{
@@ -39,7 +42,7 @@ body{
 .hero p{
     font-size:20px;
     max-width:500px;
-    margin:0 auto 30px;
+    margin-bottom:30px;
 }
 
 .hero a{
@@ -51,9 +54,9 @@ body{
     font-weight:600;
 }
 
-/* SECTIONS */
+/ SECTIONS /
 section{
-    padding:60px 20px;
+    padding:80px 20px;
 }
 
 section h2{
@@ -66,20 +69,21 @@ section p{
     margin:0 auto;
 }
 
-/* MENU */
+/ MENU /
 .menu-block{
-    margin:15px 0;
+    margin:20px 0;
 }
 
 .menu-block ul{
     list-style:none;
+    padding:0;
 }
 
 .menu-block li{
     margin:6px 0;
 }
 
-/* GALLERY */
+/ GALLERY /
 .gallery-grid{
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
@@ -94,21 +98,19 @@ section p{
     border-radius:12px;
 }
 
-/* CONTACTS */
+/ CONTACTS /
 .contacts{
     background:#f1e6d8;
-    padding:40px 20px;
 }
 
-/* FOOTER */
+/ FOOTER /
 footer{
-    text-align:center;
-    padding:15px;
     background:#3e2f24;
     color:#fff;
+    padding:15px;
 }
 
-/* MOBILE */
+/ MOBILE */
 @media(max-width:600px){
     .hero h1{font-size:34px;}
     section h2{font-size:28px;}
@@ -184,5 +186,4 @@ footer{
 </footer>
 
 </body>
-</index.html>
 </html>
